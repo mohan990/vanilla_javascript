@@ -46,7 +46,8 @@ btnTranslate.addEventListener("click" , clickEvent)
 
 function clear()
 {
-    outputDiv.innerText = " "
+    outputDiv.innerText = " ";
+    inputText.value =" "
 }
 
 btnClear.addEventListener("click", clear)
