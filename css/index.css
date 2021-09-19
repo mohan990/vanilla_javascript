@@ -1,11 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
 }
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
 body{
     max-width: 95%;
+    font-family: 'Are You Serious', cursive;
     margin: auto;
     background: url(../images/27867\ \(1\).jpg) no-repeat top;
+    
 }
 :root
 {
@@ -36,10 +46,13 @@ body{
    height: 10vh;
    padding: 10px;
    border-radius: 10px;
-   color: red;
+   color: black;
+   text-align: center;
    outline: none;
    overflow: auto;
    overflow-x: hidden;
+   font-family: 'Are You Serious', cursive;
+   font-size: 2rem;
 }
 .output-text
 {
@@ -47,21 +60,25 @@ body{
     height: 10vh;
     padding: 10px;
     border-radius: 10px;
-   font-size: 20px;overflow: scroll;
+   font-size: 2rem;
+   overflow: auto;
    overflow-x: hidden;
     background-color: white;
     margin-top: 20px;
+    font-family: 'Are You Serious', cursive;
 
 }
 
 ::placeholder
 {
-color: green;
+color: gray;
 }
 .btn-wrap{
     
-    max-width:20% ;
+    max-width:40% ;
     margin: auto;
+  
+    
    
 }
 #btn-translate
@@ -73,12 +90,31 @@ margin-top: 30px;
 border: 1px solid rgb(255, 166, 0);
 background-color: #FEF3C7;
 font-weight: 600;
-width: 150px;
+width: 40vw;
 cursor: pointer;
 color:black ;
-    
+font-size: 1em;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-#btn-translate:hover
+
+#btn-clear
+{
+    
+padding: 10px;
+border-radius:20px ;
+margin-top: 30px;
+border: 1px solid rgb(255, 166, 0);
+background-color: #FEF3C7;
+font-weight: 600;
+width: 40vw;
+cursor: pointer;
+color:black ;
+font-size: 1rem;
+outline: none;
+
+
+}
+#btn-translate:hover,#btn-clear:hover
 {
     background-color:#e8c468 ;
 }

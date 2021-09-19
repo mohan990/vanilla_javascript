@@ -1,20 +1,52 @@
 
-var input = document.querySelector("#txt-input")
-var output = document.querySelector(".output-text")
+var inputText = document.querySelector("#txt-input")
+var outputDiv = document.querySelector(".output-text")
 var btnTranslate = document.querySelector("#btn-translate")
+var btnClear = document.querySelector("#btn-clear")
 
-var FunTransUrl = "https://api.funtranslations.com/translate/minion.json"
- 
-
-
+var FunTransUrl = "https://api.funtranslations.com/translate/minion.json";
 
 
 
+function clickEvent()
+{
+    var input = inputText.value;
+    fetch(gettransalteURL(input))
+    .then(Response => Response.json())
+    .then(json =>{
+        var translate = json.contents.translated;
+        outputDiv.innerText = translate;
+    } )
+}
 
+function gettransalteURL(input)
+{
+    return FunTransUrl + "?" + "text=" + input;
+}
 
-// function clickEvent()
+btnTranslate.addEventListener("click" , clickEvent)
+
+// function clickClear()
 // {
-//     output.innerHTML= input.value;
+//     var emptyText ="Refresh"
+//     fetch(gettransalteURL(emptyText))
+//     .then(Response => Response.json())
+//     .then(json =>{
+//         var translate = json.contents.translated;
+//         outputDiv.innerText = translate;
+// })
 // }
 
-// btnTranslate.addEventListener("click", clickEvent)
+// function gettransalteURL(text)
+// {
+    
+//     return FunTransUrl + "?" + "text="+ text
+// }
+// btnClear.addEventListener("click", clickClear)
+
+function clear()
+{
+    outputDiv.innerText = " "
+}
+
+btnClear.addEventListener("click", clear)
