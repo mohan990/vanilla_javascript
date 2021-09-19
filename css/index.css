@@ -47,6 +47,7 @@ body{
    padding: 10px;
    border-radius: 10px;
    color: black;
+   background-color: #c7c3b8;
    text-align: center;
    outline: none;
    overflow: auto;
@@ -61,9 +62,9 @@ body{
     padding: 10px;
     border-radius: 10px;
    font-size: 2rem;
+   background-color: #c7c3b8;
    overflow: auto;
    overflow-x: hidden;
-    background-color: white;
     margin-top: 20px;
     font-family: 'Are You Serious', cursive;
 
@@ -88,13 +89,13 @@ padding: 10px;
 border-radius:20px ;
 margin-top: 30px;
 border: 1px solid rgb(255, 166, 0);
-background-color: #FEF3C7;
+background-color: #c7a417;
 font-weight: 600;
 width: 40vw;
 cursor: pointer;
 color:black ;
-font-size: 1em;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+font-size: 1.5em;
+font-family: 'Are You Serious', cursive;
 }
 
 #btn-clear
@@ -104,17 +105,41 @@ padding: 10px;
 border-radius:20px ;
 margin-top: 30px;
 border: 1px solid rgb(255, 166, 0);
-background-color: #FEF3C7;
+background-color: #f8dd71;
 font-weight: 600;
 width: 40vw;
 cursor: pointer;
 color:black ;
-font-size: 1rem;
+font-size: 1.5rem;
 outline: none;
-
+font-family: 'Are You Serious', cursive;
 
 }
 #btn-translate:hover,#btn-clear:hover
 {
     background-color:#e8c468 ;
+}
+
+.footer-down
+{
+    background-color: #e8c468;
+    margin-top: 55px;
+    background: #e8c468;
+    padding: 40px;
+    border-radius: 10px;
+    
+}
+@media (max-width:425px)
+{
+    .navbar-nav{
+        padding: 30px;
+    }
+    .footer-down{
+        padding:20px;
+        
+    }
+    #btn-translate,#btn-clear
+    {
+        width: 43vw;
+    }
 }
