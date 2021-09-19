@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 95%;
+    margin: auto;
+    background: url(../images/27867\ \(1\).jpg) no-repeat top;
+}
+:root
+{
+ --btn:#60A5FA;
+}
+.navbar-nav
+{
+    background: #e8c468;
+    padding: 50px;
+    border-radius: 10px;
+}
+.container
+{
+    
+    max-width: 80%;
+    margin: auto;
+    
+}
+.input-text
+{
+    max-width: 50%;
+   margin-top: 20px;
+
+}
+#txt-input{
+   
+   width: 100%;
+   height: 10vh;
+   padding: 10px;
+   border-radius: 10px;
+   color: red;
+   outline: none;
+   overflow: auto;
+   overflow-x: hidden;
+}
+.output-text
+{
+    width: 50%;
+    height: 10vh;
+    padding: 10px;
+    border-radius: 10px;
+   font-size: 20px;overflow: scroll;
+   overflow-x: hidden;
+    background-color: white;
+    margin-top: 20px;
+
+}
+
+::placeholder
+{
+color: green;
+}
+.btn-wrap{
+    
+    max-width:20% ;
+    margin: auto;
+   
+}
+#btn-translate
+{
+    
+padding: 10px;
+border-radius:20px ;
+margin-top: 30px;
+border: 1px solid rgb(255, 166, 0);
+background-color: #FEF3C7;
+font-weight: 600;
+width: 150px;
+cursor: pointer;
+color:black ;
+    
+}
+#btn-translate:hover
+{
+    background-color:#e8c468 ;
+}
